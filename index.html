@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joyería Diamante</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Stripe.js -->
+    <script src="https://js.stripe.com/v3/"></script>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TUCODIGO"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-TUCODIGO'); // Reemplaza con tu ID de Google Analytics
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Joyería Diamante</div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#coleccion">Colección</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <h1>Bienvenido a Joyería Diamante</h1>
+        <p>Encuentra las joyas más exclusivas y elegantes.</p>
+        <a href="#coleccion" class="cta">Ver Colección</a>
+    </section>
+
+    <section id="coleccion" class="collection">
+        <h2>Nuestra Colección</h2>
+        <div class="product-list">
+            <div class="product-item">
+                <img src="anillo.jpg" alt="Anillo de Diamantes">
+                <h3>Anillo de Diamantes</h3>
+                <p>$1,500.00</p>
+                <button class="buy-button" data-product-id="prod_123">Comprar Ahora</button>
+            </div>
+            <div class="product-item">
+                <img src="collar.jpg" alt="Collar de Oro">
+                <h3>Collar de Oro</h3>
+                <p>$2,000.00</p>
+                <button class="buy-button" data-product-id="prod_456">Comprar Ahora</button>
+            </div>
+            <!-- Agrega más productos aquí -->
+        </div>
+    </section>
+
+    <section id="nosotros" class="about">
+        <h2>Sobre Nosotros</h2>
+        <p>Somos una joyería con más de 50 años de experiencia, ofreciendo piezas únicas y de alta calidad.</p>
+    </section>
+
+    <section id="contacto" class="contact">
+        <h2>Contacto</h2>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Nombre" required>
+            <input type="email" name="email" placeholder="Correo Electrónico" required>
+            <textarea name="message" placeholder="Mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Joyería Diamante. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
